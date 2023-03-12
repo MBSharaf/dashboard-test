@@ -1,0 +1,325 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, sans-serif;
+    background-color: #ccc;
+}
+/*----------------------------------- Start of Nave-------------------------------------------------*/
+nav {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #3a86ff;
+    text-decoration: none;
+  }
+  
+  .search {
+    flex-grow: 1;
+    text-align: center;
+  }
+  
+  .search input[type="text"] {
+    width: 60%;
+    padding: 6px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .search button[type="submit"] {
+    background-color: #3a86ff;
+    color: #fff;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  ul li {
+    margin: 0 10px;
+  }
+  
+  ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+  }
+  
+  ul li a:hover {
+    background-color: #333;
+    color: #fff;
+  }
+/*----------------------------------- End of Nave-------------------------------------------------*/
+/*----------------------------------- Start of container-------------------------------------------------*/
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 20px;
+
+}
+/*----------------------------------- Start of sidebar-------------------------------------------------*/
+.sidebar {
+    position: sticky;
+    height: 100vh;
+    background-color: #333;
+    padding: 20px;
+    float: right;
+    width: 300px;
+    margin-top: 19px;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 15px;
+  }
+  
+  .sidebar-box {
+    background-color: #d3d3d3;
+    color: #000;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    
+  }
+  
+  .box-icon {
+    float: left;
+    font-size: 24px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  
+  .box-content {
+    overflow: hidden;
+  }
+  
+  .box-content h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .box-content p {
+    margin: 10px;
+    font-size: 14px;
+  }
+  
+/*----------------------------------- Start of Analytics-------------------------------------------------*/
+section {
+	background-color: #fff;
+	border: 1px solid #ccc;
+	flex-basis: 48%;
+	padding: 20px;
+    border-radius: 15px;
+    margin-left: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+	margin-bottom: 10px;
+}
+
+.analytics {
+	display: grid;
+}
+
+.analytics .analytics-boxes{
+    display: flex;
+    align-items: left;
+    justify-content: space-around;
+}
+
+.box {
+	background-color: #f1f1f1;
+	border: 1px solid #ccc;
+	flex-basis: 48%;
+	margin: 10px;
+	padding: 10px;
+}
+
+.box:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.box h3 {
+	margin-bottom: 5px;
+}
+
+/*----------------------------------- Start of table-------------------------------------------------*/
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+  }
+  
+  th,
+  td {
+    text-align: left;
+    padding: 12px;
+    border: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+    color: #333;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  tfoot td {
+    font-weight: bold;
+  }
+  
+  tfoot tr:last-child {
+    background-color: #f2f2f2;
+  }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  margin: 30px;
+  
+}
+
+/*----------------------------------- Start of grid-box-------------------------------------------------*/
+.grid-box {
+  display: block;
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.5s ease;
+}
+.grid-box:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+.img-con{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.grid-box img {
+  width: 70px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.box-number {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.description {
+  background-color: #eee;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/*----------------------------------- End of Container -------------------------------------------------*/
+/*----------------------------------- Start of footer -------------------------------------------------*/
+.footer{
+    align-items: center;
+    width: 80%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.icnos .fa-brands{
+    color: #3a86ff;
+    margin: 0 13px;
+    cursor: pointer ;
+    padding: 18px 0;
+}
+.fa-solid{
+    color: #3a86ff;
+}
+/*----------------------------------- End of footer -------------------------------------------------*/
+
+/*----------------------------------- Start of Responsive -------------------------------------------------*/  
+  @media only screen and (max-width: 900px) {
+
+    nav ul{
+        display: none;
+    }
+    .search input[type="text"] {
+        width: 80%;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+    
+    .sidebar{
+        display: block;
+        margin-left: 100px;
+        float: center;
+        height: 80vh;
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+    section{
+        flex-basis: 100%;
+    }
+    .table{
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 20px;
+        padding: 5px;
+    }
+
+    .sec1{
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    th,
+    td {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ddd;
+   }
+   .table h2{
+    padding-left: 20px;
+    padding-top: 20px;
+   }
+   .grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+    margin: 30px;
+    
+  }
+  .footer{
+    align-items: center;
+    width: 80%;
+    text-align: center;
+    padding: 30px 0;
+    margin-left: 25px;
+}
+}
